@@ -185,17 +185,6 @@ test_dict = {
     'test_r': {'path': test_real_path, 'files': test_real_files}
 }
 
-# def extract_faces_train_val():
-#     for _ in train_val_dict.keys():
-#         for value in train_val_dict.values():
-#             print(value['files'])
-#             for file in value['files']:
-#                 if (file.endswith(".mp4")):
-#                     video_path = os.path.join(value['path'], file)
-#                     extract_faces_and_save(video_path, value['path'], file)
-#                 else:
-#                     continue
-
 def create_dataset(dict, extract_func):
     for value in dict.values():
         print(value['files'])

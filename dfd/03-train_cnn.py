@@ -144,32 +144,6 @@ history = model.fit(
     callbacks = custom_callbacks
 )
 print(history.history)
-
-
-# Plot results
-import matplotlib.pyplot as plt
-
-acc = history.history['accuracy']
-val_acc = history.history['val_accuracy']
-loss = history.history['loss']
-val_loss = history.history['val_loss']
-
-epochs = range(1, len(acc) + 1)
-
-plt.plot(epochs, acc, 'bo', label = 'Training Accuracy')
-plt.plot(epochs, val_acc, 'b', label = 'Validation Accuracy')
-plt.xlabel('Epochs')
-plt.title('Training and Validation Accuracy')
-plt.legend()
-plt.figure()
-
-plt.plot(epochs, loss, 'bo', label = 'Training loss')
-plt.plot(epochs, val_loss, 'b', label = 'Validation Loss')
-plt.xlabel('Epochs')
-plt.title('Training and Validation Loss')
-plt.legend()
-
-plt.show()
 # '''
 
 '''
@@ -236,31 +210,6 @@ history2 = model2.fit(
     callbacks = custom_callbacks2
 )
 print(history2.history)
-
-# Plot results
-import matplotlib.pyplot as plt
-
-acc = history2.history['accuracy']
-val_acc = history2.history['val_accuracy']
-loss = history2.history['loss']
-val_loss = history2.history['val_loss']
-
-epochs = range(1, len(acc) + 1)
-
-plt.plot(epochs, acc, 'bo', label = 'Training Accuracy')
-plt.plot(epochs, val_acc, 'b', label = 'Validation Accuracy')
-plt.xlabel('Epochs')
-plt.title('Training and Validation Accuracy')
-plt.legend()
-plt.figure()
-
-plt.plot(epochs, loss, 'bo', label = 'Training loss')
-plt.plot(epochs, val_loss, 'b', label = 'Validation Loss')
-plt.xlabel('Epochs')
-plt.title('Training and Validation Loss')
-plt.legend()
-
-plt.show()
 '''
 
 '''
@@ -330,31 +279,6 @@ history2 = model2.fit(
     callbacks = custom_callbacks2
 )
 print(history2.history)
-
-# Plot results
-import matplotlib.pyplot as plt
-
-acc = history2.history['accuracy']
-val_acc = history2.history['val_accuracy']
-loss = history2.history['loss']
-val_loss = history2.history['val_loss']
-
-epochs = range(1, len(acc) + 1)
-
-plt.plot(epochs, acc, 'bo', label = 'Training Accuracy')
-plt.plot(epochs, val_acc, 'b', label = 'Validation Accuracy')
-plt.xlabel('Epochs')
-plt.title('Training and Validation Accuracy')
-plt.legend()
-plt.figure()
-
-plt.plot(epochs, loss, 'bo', label = 'Training loss')
-plt.plot(epochs, val_loss, 'b', label = 'Validation Loss')
-plt.xlabel('Epochs')
-plt.title('Training and Validation Loss')
-plt.legend()
-
-plt.show()
 '''
 
 # Test the model
@@ -378,4 +302,4 @@ test_results = pd.DataFrame({
 print(test_results)
 
 # Export results to .csv format
-test_results.to_csv('rerun1.csv')
+test_results.to_csv('effnet_test_results.csv')

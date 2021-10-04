@@ -52,7 +52,3 @@ print('Total Number of Fake videos: ', len(all_fake_faces))
 # With 80% / 20% ratio
 splitfolders.ratio(dataset_path, output='z_split_dataset', seed=1377, ratio=(.8, .2))
 print('Train / Val Split Done!')
-
-
-
-
